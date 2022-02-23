@@ -3,6 +3,11 @@ const path = require('path');
 
 const config = {
   entry: './client/src/index.js',
+  devServer: {
+    host: 'localhost',
+    port: 9000,
+    open: true
+  },
   output: {
     path: path.resolve(__dirname, './client/dist'),
     filename: 'bundle.js'
